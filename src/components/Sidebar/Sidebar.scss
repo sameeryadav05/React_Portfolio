@@ -1,0 +1,106 @@
+.sidebar {
+  background-color: skyblue;
+
+  .Navigation {
+    overflow: hidden;
+    height: 2.5rem;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    text-align: center;
+    top: 0.6rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.211);
+    color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding-right: 1rem;
+
+    .Link {
+    width: 40%;
+      position: relative;
+      display: inline-block;
+      color: #f6f6f8;
+      text-decoration: none;
+      padding: 0.5rem 0;
+
+      &:hover{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background-color: rgba(128, 128, 128, 0.274);
+        // width: 80%; /* expand underline on hover */
+      }
+    }
+
+  }
+
+
+  .menu {
+    height: 2.3rem;
+    width: 2.3rem;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    // position: relative;
+    cursor: pointer;
+    z-index: 10;
+    top: 0.6rem;
+    right: 1rem;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.562);
+  }
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+  .sidebar {
+    .Navigation {
+      height: fit-content;
+      width: 50vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      padding-top: 4rem;
+      position: fixed;
+      flex-direction: column;
+      text-align: center;
+      top: 0.6rem;
+      background: #fff;
+      right: 1rem;
+      z-index: 1;
+//       backdrop-filter: blur(5px);
+// box-shadow: 0 4px 32px 0 #245bff11;
+// border-radius: 18px;
+
+
+
+      // border-top-left-radius: 1rem;
+      // border-bottom-left-radius: 1rem;
+      // border-top-right-radius: 1rem;
+      // border-bottom-right-radius: 1rem;
+      .Link{
+        margin-left: 1rem;
+        width: 90%;
+              // color: #f6f6f8;
+              color: black;
+        font-size: x-large;
+      }
+    }
+    .menu{
+      // z-index: 5;
+      height: 1.8rem;
+      width: 1.8rem;
+      color: rgba(0, 0, 0, 0.699);
+      opacity: 0.5;
+    }
+  }
+}

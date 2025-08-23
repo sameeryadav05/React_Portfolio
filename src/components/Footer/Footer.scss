@@ -1,0 +1,221 @@
+.footer-container {
+  z-index: 2;
+  bottom: 0;
+  //   background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fbfbfb;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem 0.5rem 1rem;
+  height: fit-content;
+  hr{
+    margin:auto;
+    width: 90%;
+    filter: opacity(0.4);
+  }
+
+  .foot-content {
+    // background-color: bisque;
+    color: #0c0c1d;
+    display: flex;
+    justify-content: space-between;
+    // gap: -10%;
+    width: 100%;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    height: fit-content;
+    .name {
+        // background-color: gray;
+        height: fit-content;
+        width: 30%;
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #ff8a8a,
+          #ffb347,
+          #ffeb3b,
+          #4caf50,
+          #2196f3,
+          #9c27b0,
+          #ff8a8a
+        );
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientMove 6s ease infinite;
+      }
+      p{
+        color: gray;
+        margin-top: 0.8rem;
+      }
+      @keyframes gradientMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    }
+
+    .links{
+        height: fit-content;
+        position: relative;
+        left: -5%;
+        // border: 1px solid black;
+        ul{
+            margin-top: 1rem;
+            li{
+                        color: rgba(0, 0, 0, 0.724);
+                margin-left: 0.5rem;
+                margin-bottom: 0.7rem;
+            text-decoration: none;
+            list-style: none;
+                        &:hover{
+                
+                 transform:translateY(-2px);
+            }
+        }}
+    }
+    .social{
+        height: fit-content;
+        .socialIcons {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.6rem;
+            div {
+                border: none;
+                outline: none;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.237);
+            height: 3rem;
+            overflow: hidden;
+            width:3rem;
+              transition: all 0.3s ease;
+            &:hover{
+                
+                 transform:scale(1.05) translateY(-0.2rem);
+            }
+            // text-align: center;
+            // padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            }
+        }
+    }
+  }
+
+  .logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: inherit;
+    border-radius: 50%;
+    position: absolute;
+    // left: 48vw;
+    // transition: all ease 0.3s;
+    right: 48vw;
+    top: -2.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    filter: drop-shadow(0px 0px 2px rgba(128, 128, 128, 0.674));
+
+  }
+
+  .footer-text{
+    width: 100%;
+    div{
+        width: 100%;
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: rgba(0, 0, 0, 0.744);
+        font-size: 1.1rem;
+
+                &:nth-of-type(1)
+        {
+            margin-top: 1rem;
+            letter-spacing:1px;
+            // font-size: 0.8rem;
+        }
+        &:nth-of-type(2)
+        {
+            margin-bottom: 1.5rem;
+        }
+        
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .footer-container {
+        height: fit-content;
+    .foot-content{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: normal;
+        padding: 0.2rem;
+        padding-bottom: 1rem;
+        gap: 1.5rem;
+        .name{
+            width: 100%;
+            h1{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 0.9rem;
+                margin-top: 0.7rem;
+            }
+        }
+
+        .links{
+            h1{
+                font-size: 1.2rem;
+            }
+            left: 0%;
+
+        }
+        .social{
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .logo {
+      height: 3.4rem;
+      width: 3.4rem;  
+      right: 43vw;
+    }
+      .footer-text{
+    div{
+        padding: 0rem;
+        font-size: 0.9rem;
+        &:nth-of-type(1)
+        {
+            letter-spacing: 0px;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+        }
+        &:nth-of-type(2)
+        {
+            margin-bottom: 1.5rem;
+        }
+    }
+  }
+}
+
+}

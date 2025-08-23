@@ -1,0 +1,267 @@
+.hero {
+  height: calc(100vh - 3rem);
+  width: 100%;
+  background:transparent;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+
+
+  .comet2{
+    height: 50px;
+    opacity: 0.6;
+    // width: 50;
+  }
+  .tech{
+    height: 1rem;
+    object-fit: contain;
+    filter: drop-shadow(4px 4px 5px gray);
+  }
+  .hero-content{
+     pointer-events: auto; 
+    position: absolute;
+    top: 18%;
+    left: 15%;
+    height: 35%;
+    // width: 40%;
+    width: fit-content;
+    display: flex;
+    // align-items: center;
+    border-radius: 2rem;
+    justify-content: center;
+    // background-color: rgba(255, 255, 255, 0.139);
+
+    .intro{
+      position: relative;
+      width: 100%;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      height: fit-content;
+
+      .Hi-logo{
+        position: relative;
+        top: -5.7rem;
+        left: 1rem;
+        // background-color: antiquewhite;
+        height: 100%;
+
+        font-size: 3.7rem;
+      }
+      .intro-text{
+        // background-color: aqua;
+        .Hi{
+          display: inline-block;
+          font-size: 4rem;
+          margin-left: 1.5rem;
+          color: skyblue;
+          color: rgb(210, 28, 210);
+        }
+        .name{
+          font-size: 3rem;
+          margin-left: 1.5rem;
+          color: #CCCCCC;
+        }
+        h2{
+          display: inline-block;
+          font-size: 2rem;
+          margin-left: 1rem;
+        }
+        .stack{
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          display: inline-block;
+          margin-left: 1.5rem;
+        }
+        .stack span:nth-child(1)
+        {
+          color: #318B35;
+          margin-right:0.4rem;
+        }
+        .stack span:nth-child(2)
+        {
+           color:#CCCCCC;
+           margin-right:0.4rem;
+        }
+        .stack span:nth-child(3)
+        {
+          color: #609EB6;
+          margin-right:0.4rem;
+        }
+        .stack span:nth-child(4)
+        {
+          color: #7A9A3F;
+          margin-right: 1rem;
+        }
+        p{
+          display: inline-block;
+          font-size: 1.5rem;
+          color: rgb(170, 157, 157);
+        }
+      }
+
+    }
+    .buttons{
+              position: relative;
+        z-index: 15;
+      // background-color: aqua;
+      margin-top: 2rem;
+      button{
+        position: relative;
+        // z-index: 15;
+        padding: 0.5rem 0.5rem;
+        border: 1px solid white;        
+        margin: auto 1rem;
+        // width: 9rem;
+        outline: none;
+        color: black;
+        // color: #0c0c0c;
+        border-radius:1rem;
+        transition: all 0.2s ease;
+        cursor: pointer;
+          background: rgba(255, 255, 255, 0.541);
+        // background-color: rgba(255, 255, 255, 0.717);
+        &:hover{
+          // background-color:white;
+          // color: #0c0c0c;
+          // color: white;
+          // background-color: transparent;
+          // transform: translateY(-10px);
+          color: white;
+          background: rgba(255, 255, 255, 0.2);
+          border-color: rgba(255, 255, 255, 0.5);
+          // box-shadow: 0 0 10px rgba(255, 255, 255, 0.6),
+          //     0 0 20px rgba(255, 255, 255, 0.4);
+        }
+    }
+    }
+
+  }
+
+  .planet{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    // transform: rotate(20deg);
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    filter: opacity(1);
+    z-index:1;
+    border-radius: 50%;
+    // animation: revolve 3s ease-in-out 0.1s infinite ;
+    box-shadow: 5px 5px 40px white;
+    // transition: all 2s 0.1s;
+  }
+
+  .earth{
+        height: 700px;
+    width: 700px;
+    object-fit: cover;
+    // transform: rotate(20deg);
+    position: absolute;
+    top: 60%;
+    left: 27%;
+    filter:brightness(0.9) saturate(0.6);
+    // z-index: 5;
+    border-radius: 50%;
+    // animation: revolve 3s ease-in-out 0.1s infinite ;
+    box-shadow: 0 0 40px 8px #247aff66, 0 0 80px 16px #00ffe766;
+    // transition: all 2s 0.1s;
+
+  }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .hero{
+      .comet1 , .comet2{
+        transform:rotate(280deg);
+      }
+    .hero-content{
+      width: 99%;
+      padding: 0.3rem;
+      top: 20%;
+      left: 23%;
+
+    .intro{
+      position: relative;
+      width: 100%;
+      display: flex;
+      left: -30%;
+      // justify-content: center;
+      align-items: center;
+      height: fit-content;
+
+      .Hi-logo{
+        position: relative;
+        top: -5rem;
+        // background-color: antiquewhite;
+        height: 100%;
+        font-size: 2.8rem;
+        left: 1.6rem;
+      }
+      .intro-text{
+        .stack{
+          font-size: 1.1rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+        .name{
+          font-size: 2.3rem;
+        }
+        // background-color: aqua;
+        .Hi{
+          display: inline-block;
+          font-size: 3.5rem;
+          margin-left: 1.5rem;
+          color: skyblue;
+        }
+        h1{
+          font-size: 4rem;
+          margin-left: 1.5rem;
+          color: rgba(255, 217, 0, 0.626);
+          color: inherit;
+        }
+        h2{
+          display: inline-block;
+          font-size: 2rem;
+          margin-left: 1rem;
+        }
+      }
+      .buttons{
+        // margin-top: 1rem;
+        margin: 1rem 0.5rem;
+        button{
+            font-size: 0.8rem;
+            padding: 0.6rem 0.8rem;
+            margin: 0.2rem 0.7rem;
+        }
+      }
+
+    }
+    }
+    .planet{
+      height: 70px;
+      width: 70px;
+      top: 30%;
+      left: -10%;
+    }
+    .earth{
+      height: 450px;
+      width: 450px;
+      top: 70%;
+      left: -5%;
+      margin: auto;
+      // height: 600px;
+      // width: 600px;
+    }
+  }
+}
+
+
