@@ -9,7 +9,7 @@ import { ExternalLink, GitBranch, Github, LucideGithub } from 'lucide-react';
 const items = [
   {
     id: 1,
-    githuburl:'',
+    githuburl:'https://github.com/sameeryadav05/React_Portfolio',
     visiturl:'',
     title: "Personal Portfolio",
     imgUrl:'../src/assets/portfolio.png',
@@ -58,7 +58,9 @@ const Single = ({ item }) => {
         <div className="project-content">
             <h1>{item.title}</h1>
             <p>{item.description}</p>
-        <div className="buttons"><button><a href={item.githuburl}>Github<span><Github size={18} style={{ marginLeft: 6 }} /></span></a></button><button><a href={item.visiturl}>Visit <span><ExternalLink size={18} style={{ marginLeft: 6 }}/></span></a></button></div>
+        <div className="buttons"><button><a href={item.githuburl}>Github<span><Github size={18} style={{ marginLeft: 6 }} /></span></a></button>
+       {item.id==1?null: <button><a href={item.visiturl}>Visit <span><ExternalLink size={18} style={{ marginLeft: 6 }}/></span></a></button>}
+        </div>
         </div>
       </motion.div>
     </section>

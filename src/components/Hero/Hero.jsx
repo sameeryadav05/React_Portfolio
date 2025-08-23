@@ -79,7 +79,7 @@ const Hero = () => {
       "drop-shadow(0 0 10px #ffcc66) drop-shadow(0 0 20px #ff9933) drop-shadow(0 0 40px #ff6600)",
       "drop-shadow(0 0 20px #fff099) drop-shadow(0 0 30px #ffcc66) drop-shadow(0 0 60px #ff9933)",
     ]}} // bottom center
-    transition={{duration:20,delay:1,repeat:Infinity,repeatType:'loop',repeatDelay:10}}
+    transition={{duration:4,delay:2,repeat:Infinity,repeatType:'loop',repeatDelay:10}}
     src='../src/assets/meteor.png'  className='comet2'/>
       <motion.img 
       initial={{scale:0.8}}

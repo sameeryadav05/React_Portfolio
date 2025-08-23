@@ -74,8 +74,10 @@
       flex-direction: column;
       text-align: center;
       top: 0.6rem;
-      background: #fff;
+      background: #191F36;
       right: 1rem;
+      filter: opacity(0.8);
+
       z-index: 1;
 //       backdrop-filter: blur(5px);
 // box-shadow: 0 4px 32px 0 #245bff11;
@@ -90,9 +92,10 @@
       .Link{
         margin-left: 1rem;
         width: 90%;
+              color: white;
               // color: #f6f6f8;
-              color: black;
-        font-size: x-large;
+              // color: black;
+        font-size: large;
       }
     }
     .menu{
