@@ -4,6 +4,7 @@ import './About.scss'
 import Chip from '@mui/material/Chip';
 import { motion } from 'framer-motion'
 import useAboutStore from '../../AboutStore'
+import { portfolioimage2} from '../../assets/Photos';
 
 const About = () => {
   const fullText = `" I’m a full-stack MERN developer passionate about building scalable, user-friendly web applications. I enjoy blending creativity with problem-solving, from crafting clean, responsive interfaces to developing robust backends. Always eager to learn and explore new technologies, I focus on delivering impactful digital solutions.`
@@ -66,7 +67,7 @@ const About = () => {
             </motion.div>
           </div>
 
-          <img src='../src/assets/portfolioimage2.webp' className='about-img' />
+          <img src={portfolioimage2} className='about-img' />
         </div>
       </motion.div>
     </motion.div>

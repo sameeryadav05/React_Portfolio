@@ -1,20 +1,14 @@
-// import stars from './stars.png'
-import node from './node.png';
-import moongoDb from './moongoDb.png'
-import mu5 from './mu5.png';
-import javascript from './javascript.png'
-import python from './python.png'
-import react from './react.png'
-import redux from './redux.png'
-import sass from './sass.png'
-import typescript from './typescript.png'
-import html from './html.png'
-import github from './Github.png'
-import git from './git.png'
-import figma from './figma.png'
+import earth2 from './earth2.webp'
+import meteor from './meteor.png'
+import circle from './circle.svg'
+import node from './node.png'
 import express from './express.png'
-import css from './css.png'
-import cpp from './cpp.png'
+import react from './react.png'
+import moongo from './moongo.webp'
+import Gemini from './Gemini.png'
+import portfolio from './portfolio.png'
+import NoteSaver from './NoteSaver.png'
+import portfolioimage2 from './portfolioimage2.webp'
 export {
-    node,moongoDb,mu5,javascript,python,react,redux,sass,typescript,html,github,git,figma,express,css,cpp
+  earth2,meteor,circle,node,express,react,moongo,Gemini,portfolio,portfolioimage2,NoteSaver
 }

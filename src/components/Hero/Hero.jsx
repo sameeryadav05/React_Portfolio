@@ -5,6 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { Download, DownloadIcon } from "lucide-react";
 import About from '../About/About';
 import useAboutStore from '../../AboutStore';
+import { circle, earth2, express, meteor, moongo, node, react } from '../../assets/Photos';
 const Hero = () => {
     // const [showAbout,setShowAbout] = useState(false);
 
@@ -64,14 +65,7 @@ const Hero = () => {
       {AboutState&&<About/>}
     </AnimatePresence>
 
-    {/* <motion.img 
-      initial={{ x:isMobile?"-20vw":"-45vw" , y:isMobile?"30vh":"-20vh",rotate:240}} // top-right off-screen
-      animate={{ x:isMobile?"100vw":"70vw", y:isMobile?"50vh":"100vh",    filter: [
-      "drop-shadow(0 0 10px #ffcc66) drop-shadow(0 0 20px #ff9933) drop-shadow(0 0 40px #ff6600)",
-      "drop-shadow(0 0 20px #fff099) drop-shadow(0 0 30px #ffcc66) drop-shadow(0 0 60px #ff9933)",
-    ] }} // bottom center
-    transition={{duration:5,delay:1,repeat:Infinity,repeatType:'loop',repeatDelay:50}}
-    src='../src/assets/meteor.png'  className='comet1'/> */}
+
 
     <motion.img 
       initial={{ x:isMobile?"-20vw":"-45vw" , y:isMobile?"-80vh":"-20vh",rotate:240}} // top-right off-screen
@@ -80,12 +74,12 @@ const Hero = () => {
       "drop-shadow(0 0 20px #fff099) drop-shadow(0 0 30px #ffcc66) drop-shadow(0 0 60px #ff9933)",
     ]}} // bottom center
     transition={{duration:4,delay:2,repeat:Infinity,repeatType:'loop',repeatDelay:10}}
-    src='../src/assets/meteor.png'  className='comet2'/>
+    src={meteor}  className='comet2'/>
       <motion.img 
       initial={{scale:0.8}}
         animate={{ x, y ,scale:1}}
         transition={{duration:isMobile?20:35,ease:'linear',repeat: Infinity,repeatType: "loop"}}
-      src='../src/assets/circle.svg' loading='lazy' className='planet'/>
+      src={circle} loading='lazy' className='planet'/>
       <motion.div className='hero-content'
       // initial={{scale:0.6}}
       // transition={{delay:0.2,duration:0.3}}animate={{scale:1}}
@@ -131,7 +125,7 @@ const Hero = () => {
                   transition={{delay:1.2}} 
                 className='stack'>
                 <Tooltip 
-                title={<img src='../src/assets/moongo.webp' className='tech moongo' style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
+                title={<img src={moongo} className='tech moongo' style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
                   PopperProps={{
                     modifiers: [
                       {
@@ -144,7 +138,7 @@ const Hero = () => {
                   }}
                 ><span>M</span></Tooltip>
                  <Tooltip
-                  title={<img src='../src/assets/express.png' className='tech moongo' style={{height:'1.55rem',width:'1.55rem',borderRadius:'50%'}}/>} placement='top' arrow
+                  title={<img src={express} className='tech moongo' style={{height:'1.55rem',width:'1.55rem',borderRadius:'50%'}}/>} placement='top' arrow
                   PopperProps={{
                     modifiers: [
                       {
@@ -157,7 +151,7 @@ const Hero = () => {
                   }}
                  ><span>E</span></Tooltip>
                 <Tooltip
-                  title={<img src='../src/assets/react.png' className='tech moongo' style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
+                  title={<img src={react} className='tech moongo' style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
                   PopperProps={{
                     modifiers: [
                       {
@@ -170,7 +164,7 @@ const Hero = () => {
                   }}
                 ><span>R</span></Tooltip>
                 <Tooltip
-                  title={<img src='../src/assets/node.png' style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
+                  title={<img src={node} style={{height:'1.5rem',width:'1.5rem'}}/>} placement='top' arrow
                   PopperProps={{
                     modifiers: [
                       {
@@ -209,7 +203,7 @@ const Hero = () => {
       <motion.img 
       animate={{rotate:360}}
       transition={{delay:0.5,duration:100,repeatType:'loop',repeat:Infinity}}
-      src='../src/assets/earth2.webp' loading='lazy' className='earth'/>
+      src={earth2} loading='lazy' className='earth'/>
     </div>
   )
 }
