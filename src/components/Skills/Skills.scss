@@ -1,0 +1,125 @@
+.skills {
+  height: calc(100vh - 3rem);
+  width: 100%;
+  background: transparent;
+  position: relative;
+  display: flex;
+  padding: 1rem;
+  z-index: 0;
+  text-align: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  h1 {
+    font-size: 2rem;
+    background: linear-gradient(
+      100deg,
+      #a993ca,
+      #708fa0,
+      #d1c6d0,
+      #c45eae,
+      #8a3ffc,
+      #c94fbd
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2.2rem;
+    font-weight: bold;
+    animation: gradient-flow 5s ease-in-out infinite;
+  }
+
+  .skill-container {
+    height: 90%;
+    width: 100%;
+    margin-top: 1.5rem;
+    // background: linear-gradient(120deg, #181d29 0%, #232447 100%);
+    border-radius: 2rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #4f8ec9 #18192a; // thumb color (purple-ish) and track (dark)
+
+  // WebKit browsers
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #18192a; // deep dark track
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #c94fbd, #8a3ffc); // purple gradient thumb
+    border-radius: 16px;
+    border: 2px solid #18192a;
+    // Optionally add a box-shadow for a glowing effect:
+    // box-shadow: 0 0 6px #c94fbd66;
+  }
+
+
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    
+      width: 100%;
+
+      p {
+        font-size: 2rem;
+        text-align: left;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        display: inline;
+      }
+      .skills-box {
+        display: flex;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .skill-box {
+          height: 7rem;
+          width: 10%;
+          padding: 0.5rem;
+          border: 1px solid white;
+          border-radius: 1rem;
+          display: flex;
+          box-shadow: 0 0 10px gray;
+          background-color: whitesmoke;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            height:5rem;
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    h1 {
+      font-size: 1.7rem;
+      font-weight: 1rem;
+      //   letter-spacing: 1.5px;
+      margin-top: 1rem;
+    }
+
+    .skill-container {
+      .skill-box {
+        border-radius: 1rem;
+        padding: 0.2rem;
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+}

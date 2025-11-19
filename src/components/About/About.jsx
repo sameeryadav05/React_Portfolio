@@ -7,7 +7,7 @@ import useAboutStore from '../../AboutStore'
 import { portfolioimage2} from '../../assets/Photos';
 
 const About = () => {
-  const fullText = `" I’m a full-stack MERN developer passionate about building scalable, user-friendly web applications. I enjoy blending creativity with problem-solving, from crafting clean, responsive interfaces to developing robust backends. Always eager to learn and explore new technologies, I focus on delivering impactful digital solutions.`
+  const fullText = `" Hi, I'm Sameer Yadav, a dedicated software developer with a passion for crafting impactful solutions through technology. With extensive experience in web development and Devops , I specialize in building scalable, high-performing applications using modern technologies , With a strong foundation in data structures and algorithms, I've successfully built and deployed full-stack applications that prioritize functionality and user experience. always eager to learn more and contribute. `
 
   const [displayedText, setDisplayedText] = useState("")
   const AboutState = useAboutStore((state) => state.AboutState);
@@ -56,15 +56,17 @@ const About = () => {
 
         <div className='about-main'>
           <div className='content'>
-            <div className='text'>
+            <div className='text' style={{letterSpacing:'1px'}}>
               <p>{displayedText}<span className="cursor">|</span></p>
             </div>
 
-            <motion.div  className='ChipContainer'>
+              <motion.button initial={{y:50, scale:0.98,opacity:0}} whileInView={{y:0,scale:1,opacity:1}} 
+              transition={{duration:0.2,delay:19}} className='btn'><a href='#contact'>Contact Me</a></motion.button>
+            {/* <motion.div  className='ChipContainer'>
                 {
                     Skills.map((curr,index)=>(<span><Chip size='small' key={index} label={curr} sx={chipStyle}/></span>))
                 }
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <img src={portfolioimage2} className='about-img' />

@@ -8,6 +8,7 @@ import useAboutStore from './AboutStore';
 // import Paralax from './components/Paralax/Paralax';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
+import Skills from './components/Skills/Skills';
 function App() {
   const AboutState = useAboutStore((state) => state.AboutState);
   const showAbout = useAboutStore((state) => state.showAbout);
@@ -17,6 +18,10 @@ function App() {
     <section id='Homepage' className='Homepage'>
       {!AboutState&&<AnimatePresence mode='wait'><Navbar /></AnimatePresence>}
       <Hero/>
+    </section>
+    <section id='skills'>
+    <Navbar />
+      <Skills />
     </section>
     {/* <section id='Skills'><Navbar hide={true}/></section> */}
     {/* <section id='projects'><Paralax /></section> */}
