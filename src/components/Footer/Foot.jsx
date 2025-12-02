@@ -32,6 +32,7 @@ const Foot = ({ showFooter, setShowFooter }) => {
             <h1>Quick links</h1>
           <ul>
             <li><a href='#'>Home</a></li>
+            <li><a href='#skills'>skills</a></li>
             <li><a href='#projects'>Projects</a></li>
             <li><a href='#contact'>Contact</a></li>
           </ul>

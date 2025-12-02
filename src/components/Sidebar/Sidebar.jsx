@@ -27,8 +27,11 @@ const Sidebar = () => {
         //    transition={{type:'spring',stiffness:3000,damping:40}}
            >
             <motion.div whileHover={{scale:1.1}} className='Link' onClick={()=>setOpen(prev=>!prev)}><a  href='#Homepage'>Home</a></motion.div>
+
+            <motion.div whileHover={{scale:1.1}} className='Link' onClick={()=>setOpen(prev=>!prev)}><a  href='#skills'>skills</a></motion.div>
             {/* <motion.div whileHover={{scale:1.1}} className='Link' onClick={()=>setOpen(prev=>!prev)}><a href='#Skills'>Skills</a></motion.div> */}
             <motion.div whileHover={{scale:1.1}} className='Link' onClick={()=>setOpen(prev=>!prev)}><a href='#projects'>Projects</a></motion.div>
+
             <motion.div whileHover={{scale:1.1}} className='Link' onClick={()=>setOpen(prev=>!prev)}><a href='#contact'>Contact</a></motion.div>
         </motion.div>
         }

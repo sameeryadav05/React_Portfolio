@@ -36,7 +36,7 @@ const sendEmail = async (values) => {
 
   const formRef = useRef();
 
-const [showFooter,setShowFooter] = useState(true)
+const [showFooter,setShowFooter] = useState(false)
 
 
   

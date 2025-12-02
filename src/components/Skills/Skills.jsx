@@ -1,10 +1,12 @@
 import React from 'react'
+import DomeGallery from './DomeGallery.jsx'
 import './Skills.scss'
 const Skills = () => {
   return (
-    <div className='skills'>
-        <h1>Skills & Technologies</h1>
-    </div>
+    <>
+        {/* <h1>Skills & Technologies</h1> */}
+            <DomeGallery/>
+    </>
   )
 }
 
