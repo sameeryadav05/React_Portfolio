@@ -7,10 +7,11 @@ const DEFAULT_IMAGES = [
     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjzySo0vHp2daaRLtnMnHLpMXplfFj73Dxmg&s',
     alt: 'mysql'
   },
-  {
-    src: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102017/logo_0.png?17TK91b1B6OvV2MFrCLfukw1c8oEaNr6&itok=vsanFiUj',
-    alt: 'AWS'
-  },
+  // {
+  //   src: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/102017/logo_0.png?17TK91b1B6OvV2MFrCLfukw1c8oEaNr6&itok=vsanFiUj',
+  //   alt: 'AWS'
+  // },
+
   { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKbEmfXJag9rqlvp9jkl6XJYQ6zmKYPv4Rw&s', alt: 'Redux' },
 
   { src: 'https://i0.wp.com/frontendmasters.com/blog/wp-content/uploads/2024/04/tanstack.jpg?fit=1000%2C500&ssl=1', alt: 'React query' },
@@ -19,9 +20,8 @@ const DEFAULT_IMAGES = [
 
   { src: 'https://images.seeklogo.com/logo-png/48/1/linux-logo-png_seeklogo-482333.png', alt: 'linux' },
 
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdszya09cYqjcFKGOjQBoGLyKCMQkYBYm0bQ&s', alt: 'zustand' },
+  { src: 'https://raw.githubusercontent.com/github/explore/990a9efe0b9529eca38ca9e081bc7a97b18dff45/topics/zustand/zustand.png', alt: 'zustand' },
 
-  { src: 'https://imgs.search.brave.com/MWkp5UksEqgSfNXLCH5nh0374RD-U1FplVd1NvGg4Og/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3RfamVz/dC1qczc4NTgubG9n/b3dpay5jb20ud2Vi/cA', alt: 'jest' },
 
   { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAyxDsXAv0DYruT0KSin2YgggqZCWTt2biQ&s', alt: 'Typescript' },
 
@@ -39,18 +39,18 @@ const DEFAULT_IMAGES = [
 
   { src: 'https://imgs.search.brave.com/si28AG8RaZ7bLA4Or61BXlsPGTYxzEGd3u3rbMc3nbk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzM1LzEvdGFpbHdp/bmQtY3NzLWxvZ28t/cG5nX3NlZWtsb2dv/LTM1NDY3NS5wbmc', alt: 'tailwind css' },
 
-  { src: 'https://imgs.search.brave.com/VeMvg4tcgKM5eapssOvERsiqOHQipHojSDiYB3BF3cg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA4/L1Nhc3MtTG9nby01/MDB4MzEzLmpwZw', alt: 'sass' },
+  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbboXvfLV6vXPvHsTbK7WUGTz_Oqp2r6sRkQ&s', alt: 'sass' },
 
   { src: 'https://res.cloudinary.com/dl2adjye7/image/upload/v1716466543/framer_zwbowr.png', alt: 'Framer motion' },
 
   { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYHHGnM-0SkgFHe-2A7hDv_cvSfIUxpWacIQ&s', alt: 'Bash' },
 
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbqRPQ13jv9eGWrsldcgg-i3Sxo4f9wlTgVZdFPH8HPxCHub20Xd1fjM6f0idnp2xmsc&usqp=CAU', alt: 'kubernetes' },
+  // { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbqRPQ13jv9eGWrsldcgg-i3Sxo4f9wlTgVZdFPH8HPxCHub20Xd1fjM6f0idnp2xmsc&usqp=CAU', alt: 'kubernetes' },
 
-  { src: 'https://i.pinimg.com/736x/61/71/0f/61710f4078c1c9389985c0125105529f.jpg', alt: 'grafana' },
+  // { src: 'https://i.pinimg.com/736x/61/71/0f/61710f4078c1c9389985c0125105529f.jpg', alt: 'grafana' },
 
   {
-    src: 'https://imgs.search.brave.com/tkUSNU5SDk73gYa3y8BlSpu3Uxy8sRFcnCm0WNE-D4A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/ZGl4LmNvbS9sb2dv/LzE3NjQ5MDUuanBn',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpcgqVlv1uKFwmS7sxQam6PCWMsNiy1eiWvA&s',
     alt: 'node'
   },
   {

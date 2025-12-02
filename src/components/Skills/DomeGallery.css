@@ -112,7 +112,7 @@ main.sphere-main {
   object-fit: cover;
   pointer-events: none;
   backface-visibility: hidden;
-  filter: var(--image-filter, none);
+  /* filter: var(--image-filter, none); */
 }
 
 .viewer {
@@ -165,18 +165,20 @@ main.sphere-main {
     transform 500ms ease,
     opacity 500ms ease;
   transform-origin: top left;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); */
 }
 
 .viewer .enlarge img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: var(--image-filter, none);
+  border-radius: 1rem;
+  object-fit: contain;
+  /* filter: var(--image-filter, none); */
 }
 
 .sphere-root .enlarge-closing img {
-  filter: var(--image-filter, none);
+   border-radius: 1rem;
+  /* filter: var(--image-filter, none); */
 }
 
 .edge-fade {
