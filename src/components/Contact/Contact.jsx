@@ -1,10 +1,11 @@
 import React, { useRef, useState } from 'react'
 import './Contact.scss'
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 import {motion, scale} from 'framer-motion'
 import {useFormik} from 'formik'
 import { FormSchema } from './FormSchema'
 import Foot from '../Footer/Foot';
+
 const Contact = () => {
 
   const initialValue = {
@@ -13,22 +14,20 @@ const Contact = () => {
     Text:''
   }
 
-const sendEmail = async (values) => {
-  try {
-    const res = await emailjs.send('service_5aca2ay', 'template_ukvkhbc', values, 'm7QSex-LGLO13wO7e');
-    console.log("SUCCESS!", res.status, res.text);
-  } catch(error) {
-    console.log("FAILED...", error.text);
-  }
-};
+
 
   const {values,errors,touched,handleSubmit,handleBlur,handleChange} = useFormik({
     initialValues:initialValue,
     validationSchema:FormSchema,
     onSubmit:async (values,actions)=>{
 
-      console.log(values)
-    await sendEmail(values);
+    console.log(values)
+    const name = values.Name
+    const msg = values.Text
+    const email = values.Email
+    const res = await axios.post('https://portfoiio-emai-service.vercel.app/sendmail',{name,msg,email})
+    console.log(res)
+    // await sendEmail(values.Text,values.Email,values.Name);
     actions.resetForm();
     }
   })
