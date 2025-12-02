@@ -9,12 +9,21 @@ import useAboutStore from './AboutStore';
 import Project from './components/Project/Project';
 import Contact from './components/Contact/Contact';
 import Skills from './components/Skills/Skills';
+import { Toaster } from "react-hot-toast";
 function App() {
   const AboutState = useAboutStore((state) => state.AboutState);
   const showAbout = useAboutStore((state) => state.showAbout);
   const hideAbout = useAboutStore((state) => state.hideAbout);
   return (
     <div className='main'>
+      <Toaster 
+        position="top-center"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 3000,
+          style: { zIndex: 999999 }
+        }}
+      />
     <section id='Homepage' className='Homepage'>
       {!AboutState&&<AnimatePresence mode='wait'><Navbar /></AnimatePresence>}
       <Hero/>

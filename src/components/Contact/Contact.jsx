@@ -5,7 +5,7 @@ import {motion, scale} from 'framer-motion'
 import {useFormik} from 'formik'
 import { FormSchema } from './FormSchema'
 import Foot from '../Footer/Foot';
-import toast from "react-hot-toast";
+import {toast} from "react-hot-toast";
 
 const Contact = () => {
 
@@ -33,7 +33,7 @@ const Contact = () => {
         
       } catch (error) {
         console.log(error)
-        toast.error(error.response.data.message)
+          error.response?.data?.message || "Failed to send message !"
       }
 
     // await sendEmail(values.Text,values.Email,values.Name);
