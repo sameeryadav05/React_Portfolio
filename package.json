@@ -22,6 +22,7 @@
     "nodemailer": "^7.0.11",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-hot-toast": "^2.6.0",
     "react-icons": "^5.5.0",
     "react-simple-typewriter": "^5.0.1",
     "react-typed": "^2.0.12",

@@ -5,6 +5,7 @@ import {motion, scale} from 'framer-motion'
 import {useFormik} from 'formik'
 import { FormSchema } from './FormSchema'
 import Foot from '../Footer/Foot';
+import toast from "react-hot-toast";
 
 const Contact = () => {
 
@@ -25,8 +26,16 @@ const Contact = () => {
     const name = values.Name
     const msg = values.Text
     const email = values.Email
-    const res = await axios.post('https://portfoiio-emai-service.vercel.app/sendmail',{name,msg,email})
-    console.log(res)
+      try {
+          const res = await axios.post('https://portfoiio-emai-service.vercel.app/sendmail',{name,msg,email})
+          console.log(res)
+          toast.success(res.data.message)
+        
+      } catch (error) {
+        console.log(error)
+        toast.error(error.response.data.message)
+      }
+
     // await sendEmail(values.Text,values.Email,values.Name);
     actions.resetForm();
     }
