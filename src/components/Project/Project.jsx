@@ -64,6 +64,8 @@ const Single = ({ item }) => {
        {item.id==1?null: <button><a href={item.visiturl}>Visit <span><ExternalLink size={18} style={{ marginLeft: 6 }}/></span></a></button>}
         </div>
         </div>
+
+
       </motion.div>
     </section>
   );

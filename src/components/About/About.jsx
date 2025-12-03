@@ -69,7 +69,8 @@ const About = () => {
             </motion.div> */}
           </div>
 
-          <img src={portfolioimage2} className='about-img' />
+            <img src={portfolioimage2} className='about-img' />
+  
         </div>
       </motion.div>
     </motion.div>
