@@ -12,13 +12,13 @@ const DEFAULT_IMAGES = [
   //   alt: 'AWS'
   // },
 
-  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxKbEmfXJag9rqlvp9jkl6XJYQ6zmKYPv4Rw&s', alt: 'Redux' },
+  { src: 'https://imgs.search.brave.com/bElQoJ7G5_kfnSYYDjBlO0PvZfpScY4w2CO9SC_0WrM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzI4LzEvcmVkdXgt/bG9nby1wbmdfc2Vl/a2xvZ28tMjg0MzM1/LnBuZw', alt: 'Redux' },
 
   { src: 'https://i0.wp.com/frontendmasters.com/blog/wp-content/uploads/2024/04/tanstack.jpg?fit=1000%2C500&ssl=1', alt: 'React query' },
 
   { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4CqcHFbpdtOaT34dIM4QEuNtvHDamiATnA&s', alt: 'docker' },
 
-  { src: 'https://images.seeklogo.com/logo-png/48/1/linux-logo-png_seeklogo-482333.png', alt: 'linux' },
+  { src: 'https://imgs.search.brave.com/_DUJAP7AMvgqLlnNGQ7m7wTEkrZWH0eyab2CJNlE00A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2YwL2Q4/LzIzL2YwZDgyMzFh/MzNlNzFiNDI4MDdl/ZDFlMzM2NzRlM2Rj/LmpwZw', alt: 'linux' },
 
   { src: 'https://raw.githubusercontent.com/github/explore/990a9efe0b9529eca38ca9e081bc7a97b18dff45/topics/zustand/zustand.png', alt: 'zustand' },
 
@@ -33,7 +33,7 @@ const DEFAULT_IMAGES = [
 
   { src: 'https://imgs.search.brave.com/Dzb0vfMwA2blYSpSWOhOVkhwmUWIeQPVqX8gAsTqAiE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3RfMzIx/X2MuanBn', alt: 'c++' },
 
-  { src: 'https://imgs.search.brave.com/XdeezBKwI17mn1aqGcQky3Wn4PzXchKnUTliF2XUh5Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3RfYXhp/b3MzNjI2LmpwZw', alt: 'Axios' },
+  { src: 'https://imgs.search.brave.com/iJo71gS-9BKN4Zel1SyrToa64pQMFmrVR0RL4q0FUgQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzQyLzEvYXhpb3Mt/bG9nby1wbmdfc2Vl/a2xvZ28tNDI4MDQ2/LnBuZw', alt: 'Axios' },
 
   { src: 'https://dt-cdn.net/hub/logos/net-rabbitmq.png', alt: 'Rabbitmq' },
 
