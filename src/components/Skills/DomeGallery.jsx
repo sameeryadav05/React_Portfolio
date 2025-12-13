@@ -13,6 +13,8 @@ const DEFAULT_IMAGES = [
   // },
 
   { src: 'https://imgs.search.brave.com/bElQoJ7G5_kfnSYYDjBlO0PvZfpScY4w2CO9SC_0WrM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzI4LzEvcmVkdXgt/bG9nby1wbmdfc2Vl/a2xvZ28tMjg0MzM1/LnBuZw', alt: 'Redux' },
+  
+  { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5cngZLn-q-Z4OloT9jdIuUWBz6fVkNoxYPg&s', alt: 'Graphq' },
 
   { src: 'https://i0.wp.com/frontendmasters.com/blog/wp-content/uploads/2024/04/tanstack.jpg?fit=1000%2C500&ssl=1', alt: 'React query' },
 
